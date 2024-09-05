@@ -1,0 +1,7 @@
+{
+  "name": "test-module-condition",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  }
+}
