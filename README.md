@@ -8,7 +8,8 @@ This is a repository used to test a new exports condition in Node.js that can be
       // On new version of Node.js, both require() and import get the ESM version
       "module": "./index.js",
       // On older version of Node.js, where "module" and require(esm) are not supported,
-      // use the transpiled CJS version for require()
+      // use the transpiled CJS version for require(). Library authors decide
+      // to drop support for older versions of Node.js when they think it's time.
       "require": "./dist/index.cjs"
     },
     // On any other environment, or when it's imported on older version of Node.js,
